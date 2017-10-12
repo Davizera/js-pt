@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de  JS</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    // STRINGS
+    var string1 = "Nossa Gente!";
+    var email = new String("davi.SoUsA10@gmail.com"); //novo objeto
+
+    console.log(email.indexOf("@")); //imprime a posição do @ no array (vetor)
+
+    var arroba =  email.indexOf("@")+1;
+
+    console.log(email.indexOf(".", arroba)); /*ele da a posição do 1º ponto após o arroba*/
+    var ponto=email.indexOf(".",arroba);
+
+    console.log(email.substring(arroba,ponto));
+
+    console.log(email.substring(arroba)); //estamos navendo no array de caracteres, basicament um char
+
+    console.log(email.substring(0,arroba-1)); // vc pode fazer operações dentro dos paramentros
+
+    console.log(email.replace("gmail","outlook"));
+
+    console.log(email.toUpperCase());
+
+    console.log(email.toLowerCase());
+
+    console.log(email.substring(0,arroba-1).concat("@praxisjr.com.br"));
+
+    email=email.replace("gmail.com","praxisjr.com.br");
+
+    console.log(email.toLowerCase());
+    console.log(email.substring(0,arroba-1).concat("@praxisjr.com.br").toUpperCase());
+
+
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JS</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    // condicionais
+    function validaEmail(email){
+      var arroba  = email.indexOf("@");
+      var ponto   = email.indexOf(".", arroba);
+      var dominio = email.substring(arroba+1);
+      var usuario = email.substring(0,arroba);
+      var espacoEmBranco = email.indexOf(" ");
+      console.log(arroba);
+      console.log(espacoEmBranco); // se o valor retornado for igual a -1  n há espaços em branco, caso contrário há
+      var status = true;
+      var dpsDoPonto = email.substring(ponto+1)
+      console.log(dpsDoPonto);
+
+      if(espacoEmBranco != -1 || arroba ==-1 || ponto==-1 || dominio.length<3 || usuario.length<1 || (dpsDoPonto.length<3 || dpsDoPonto.length>6)){
+        status = false;
+      };
+
+      return status;
+    }
+    var  email = prompt("Informe seu e-mail: ")
+    if(validaEmail(email)){
+      console.log("Este é e-mail é válido!");
+    }
+    else{
+      console.log("Este e-mail é inválido!")
+    }
+
+
+
+    </script>
+  </body>
+</html>

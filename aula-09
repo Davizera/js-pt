@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de  JS</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //condicionais com switch case e estruturas de repetição
+
+      // var plano = prompt("Informe o seu plano (valores de 1 à 5): ");
+      var plano = prompt("Informe o seu plano (números de 1 à 5): ");
+
+      plano = (plano=="1")?plano:6;//operado ternário 1º condição para verdadero e 2º para falso
+
+      switch (plano) {
+          case 1:
+            console.log("Plano mensal");
+            planoMensal();
+            console.log("Voltou ao Switch!")
+            break;
+          case 2:
+            console.log("Plano Bimestral")
+          break;
+        default:
+        console.log("Plano padrão")
+
+      };
+
+      function planoMensal(){
+        console.log("Executou a função planomensal()");
+      }
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de  JavaScript</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //JSON
+      /*objeto dado mais complexo*/
+
+      var pessoa={
+        "nome":"Davizera",
+        "sexo": "masculino",
+        "idade":"19",
+        "estuda":"Engenharia de Computação",
+        "empregado":"Praxis Empresa -Jr"
+    };
+
+      console.log(pessoa);
+      console.log(pessoa.nome);
+      console.log(pessoa.sexo);
+      console.log(pessoa.idade);
+      console.log(pessoa.estuda);
+      console.log(pessoa.empregado);
+
+      var texto ='{"A putaria é muito boa, mas precisa ser remaneja, para que ela não afete seus estudo gerencie bem o seu tempo, por isso durma pouco, estude bastante, tire boas notas para que não tenham o que falar de você e seja um exemplo para todos ao seu redor"}';
+
+      console.log(texto);
+
+      var texto2='{"paragrafo":"curtir é legal, mas estudar é melhor e dá futuro"}';
+
+      console.log(texto2); // para o JS isso é uma string, por causa das ''
+      var objTexto = JSON.parse(texto2);
+      console.log(objTexto); //para o JS isso é um objeto
+
+      var clientes = {
+        "clientes":
+        [
+          { "nome" : "Davizera God" , "idade" : 19 },
+          { "nome" : "Uergay SB" , "idade" : 24 },
+          { "nome": "Imaturo Man" , "idade" : 18 }
+        ]
+      };
+      console.log(clientes);
+
+    </script>
+  </body>
+</html>
