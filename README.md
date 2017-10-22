@@ -1,2 +1,2 @@
 # learning-js
-Aprendeno JS
+Aprendendo JS
