@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso de JS</title>
+</head>
+<input type="text" id="puta" onkeypress="doidera()">
+<ul>
+  <li class="oin">Item</li>
+  <li class="oin">Item</li>
+  <li class="oin">Item</li>
+  <li class="oin">Item</li>
+</ul>
+
+<body>
+  <script type="text/javascript">
+    // get element by class name and tag name
+    function doidera() {
+      var texto = prompt("Fale algo: ");
+
+      var tam = document.getElementById('puta').value;
+      var li2 = document.getElementsByClassName('oin');
+      tam = parseInt(tam);
+      for (var i = 0; i < tam; i++) {
+        li2[i].innerHTML = texto;
+        var node = document.createElement("LI"); // Create a <li> node
+        var textnode = document.createTextNode("Water"); // Create a text node
+        node.appendChild(textnode); // Append the text to <li>
+        document.getElementById("oin").appendChild(node);
+        console.log(i)
+      }
+    }
+    console.log(li);
+    var li = document.getElementsByTagName('li');
+    for (var i = 0; i < li.length; i++) {
+      if (i % 2 == 0) {
+        li[i].style.backgroundColor = "yellow";
+      } else {
+        li[i].style.backgroundColor = "blue";
+      }
+      li[i].style.margin = "10px";
+      li[i].style.textAlign = "center";
+      li[i].style.padding = "10px";
+    }
+  </script>
+</body>
+
+</html>

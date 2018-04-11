@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso de JS</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    //criando elementos na tela
+    // ao criar elementos na tela você n pode altera-los de imediato, nesse caso o ideal será criar uma função que realize a alteração desejada
+    var cria_botao = document.createElement("button");
+    var text_botao = document.createTextNode("Venha para nárnia!");
+    cria_botao.id = "foi-doidera";
+    cria_botao.appendChild(text_botao);
+    document.body.appendChild(cria_botao);
+    altera_botao();
+
+    function altera_botao() {
+      var muda_cor_botao = document.getElementById('foi-doidera');
+      muda_cor_botao.style.padding = "20px";
+      muda_cor_botao.style.color = "blue";
+      muda_cor_botao.style.background = "yellow";
+      muda_cor_botao.style.border = "solid red 2px";
+
+    }
+  </script>
+</body>
+
+</html>

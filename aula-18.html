@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso de JS</title>
+</head>
+
+<body>
+  <h1 id="msg">Olá,seja bem-vindo!</h1>
+  <p>Narnia</p>
+  <input type="text" id="oi">
+  <script type="text/javascript">
+    //eventos 2.0
+    var h1 = document.getElementById('msg')
+    var input = document.getElementById('oi');
+    var muda_h1 = function() {
+      var texto = prompt("Informe uma frase: ");
+      h1.innerHTML = texto;
+    }
+    input.focus(); //inicia com o foco nele!
+    h1.onclick = muda_h1;
+  </script>
+</body>
+
+</html>

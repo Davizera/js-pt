@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso de JS</title>
+</head>
+<style media="screen">
+  .bloco {
+    padding: 5px;
+    text-align: center;
+    background-color: lightgrey;
+  }
+</style>
+
+<body>
+  <h1 id="mensagem1" class="bloco">Bloco 1</h1>
+  <h1 id="mensagem2" class="bloco">Bloco 2</h1>
+  <h1 id="mensagem3" class="bloco">Bloco 3</h1>
+  <h1 id="mensagem4" class="bloco">Bloco 4</h1>
+  <a href="#" onclick="disparar()">Dispara essa porra!</a>
+
+  <script type="text/javascript">
+    //eventos costumizados
+
+    var teste = new Event('oi');
+    var blc1 = document.getElementById('mensagem1');
+    var blc2 = document.getElementById('mensagem2');
+    var blc3 = document.getElementById('mensagem3');
+    var blc4 = document.getElementById('mensagem4');
+    var eventoH1 = function() {
+      this.innerHTML = this.innerHTML + " - isso não serve para nada!";
+    }
+
+    blc1.addEventListener('oi', eventoH1, true);
+    blc2.addEventListener('oi', eventoH1, true);
+    blc3.addEventListener('oi', eventoH1, true);
+    blc4.addEventListener('oi', eventoH1, true);
+
+    function disparar() {
+      blc1.dispatchEvent(teste);
+      blc2.dispatchEvent(teste);
+      blc3.dispatchEvent(teste);
+      blc4.dispatchEvent(teste);
+    };
+  </script>
+</body>
+
+</html>
