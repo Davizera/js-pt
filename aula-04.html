@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Curso de  JavaScript</title>
-  </head>
-  <body>
-    <script type="text/javascript">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso de JavaScript</title>
+</head>
+
+<body>
+  <script type="text/javascript">
     // TRABALHANDOR COM ARRAYS
     /* Arrays são como tabelas (como as do excel por exemplo), elas conseguem armazenar vários tipo de dados, lembra uma matriz, porém ela consegue armazenar*/
-    var jukera = 10;
-    var array0= [jukera]
-    var array1 = ["Banana", "Laranja", "Abacate","PUTARIA!", 16];
+    var eu = 10;
+    var array0 = [eu]
+    var array1 = ["Banana", "Laranja", "Abacate", 16];
     var array2 = new Array();
-    var array3 = ["15",24];
+    var array3 = ["15", 24];
 
     console.log(array1);
     console.log(array2);
@@ -23,18 +25,17 @@
 
     console.log(typeof array1);
 
-    array2.push("meu pau na sua mão");
-    console.log(array2);
+    array2.push("teste um,dois");
+    console.log(array2[0]);
 
     console.log("Quantos intens possui o array 1? " + array1.length);
 
     console.log(array2.length);
 
-    for(var i=0;i<array1.length; i++){
+    for (var i = 0; i < array1.length; i++) {
       console.log(array1[i]);
     }
+  </script>
+</body>
 
-
-    </script>
-  </body>
 </html>
